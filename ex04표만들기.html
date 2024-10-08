@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- 
+        표를 만들기 위한 태그
+        1) 전체 영역을 담당하는 <teble>
+        2) 행을 담당하는 <tr>
+        3) 첫번째 행에 칸을 쪼겔때 (컬럼,제목) <th>
+        4) 나머지 행에 칸을 조갤때 (데이터) <td>
+        5) 셀 병합 가로병합(colspan 속성) / 세로병합 (rowspan 속성)
+    -->
+    <table border="1px solid black">
+        <tr bgcolor="blue">
+            <th>이름</th>
+            <th colspan="2">성별,주소</th>
+            <th>직급</th>
+        </tr>
+        <tr align="center">
+            <td>정형</td>
+            <td>남자</td>
+            <td>광주</td>
+            <td rowspan="2">선임</td>
+        </tr>
+            <td>장영우</td>
+        <td>여자</td>
+        <td>광주</td>
+</body>
+</html>

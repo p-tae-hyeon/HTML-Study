@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--    
+    표를 만드는 순서
+    1) table 태그로 틀을 작성
+    2) 필요한 줄 수 만큼 tr태그를 생성
+    3) 각각의 줄을 칸으로 쪼개기
+        - 컬럼의 이름은 th태그를 이용
+        - 데이터는 td태그를 활용
+    * 셀 병합 colspan, rowspan
+    * 글자를 정렬 allign
+    * 배경색은 bgcolor
+    *두껍게 만드는 태그 b, strong    
+-->
+</table>
+<table border="lpx solid black">
+        <tr bgcolor="aliceblue">
+            <th rowspan="2">연도</th>
+            <th colspan="2">순위</th>
+        </tr>
+        <tr bgcolor="aliceblue">
+            <th>종합</th>
+            <th>정규</th>
+        </tr>
+        <tr align="center">
+            <td>1982</td>
+            <td><strong>4</strong></td>
+            <td>4</td>
+        </tr>
+        <tr align="center" bgcolor="yellow">
+            <td>1983</td>
+            <td><strong>1</strong></td>
+            <td>2<br>(전기리그1위)</td>
+        </tr>
+        <tr align="center">
+            <td>1984</td>
+            <td><strong>5</strong></td>
+            <td>5</td>
+        </tr>
+        <tr align="center">
+            <td>1985</td>
+            <td><strong>3</strong></td>
+            <td>3</td>
+        </tr>
+</table>
+</body>
+</html>
