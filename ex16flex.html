@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- flex => flex box 라고도 불리며, 레이아웃을 배치하기 위해 나온 기능 -->
+     <style>
+        .container{
+            background-color: whitesmoke;
+            height: 500px;
+            /* (1) flex 설정
+                - 요소들이 가로로 자동 정렬
+            */
+            display: flex;
+
+            /* (2)배치 방향 설정 
+            2-1) row
+                - 메인축 : 가로로 정렬
+                - 서브축 : 세로로(수직) 정렬
+
+            2-2) column
+                - 메인축 : 세로로 정렬
+                - 서브축 : 가로(수평) 정렬
+            */
+            flex-direction: row;
+
+            /* (3) 메인축 정렬 */
+            justify-content: left;
+
+            /* (4) 서브축 정렬 */
+            align-items: center; 
+        }
+        
+
+        .item{
+            background-color: lightskyblue;
+            width: 100px;
+            height: 100px;
+            flex-basis: 15%;
+            border: solid 1px black;
+        }
+
+        #center { 
+            flex-basis:70%;
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item" id="container"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

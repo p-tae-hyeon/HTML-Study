@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* display : none
+        요소는 존재하지만 화면에 안보이게끔 처리 하는 값
+
+         */
+        .answer{
+            display: none;
+        }
+
+        /*  질문 위에 마우스를 클릭했을 때
+            답이 보이게 처리! 
+            ==> display : inline;
+        */
+        .question:active+.answer{
+            display: inline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>display : none </h3>
+    <span class="question">Q. 여러분들이 좋아하는 음료는?</span>
+    <span class="answer">A. 아이스아메리카노, 카페라떼</span>
+    <br>
+    <span class="question">Q. 오늘의 요일은?</span>
+    <span class="answer">A. 목요일</span>
+</body>
+</html>
